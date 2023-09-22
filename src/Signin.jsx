@@ -11,9 +11,6 @@ function Signin() {
   const navigate = useNavigate();
   return (
     <div>
-      {email}
-      <br />
-      {password}
       <center>
         <div
           style={{
@@ -22,7 +19,7 @@ function Signin() {
           }}
         >
           <Typography variant="h5">
-            Welcome back to Yoursera. Sign in below
+            Welcome back to StudySphere..
           </Typography>
         </div>
       </center>

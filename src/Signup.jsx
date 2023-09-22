@@ -12,8 +12,6 @@ function Signup() {
   const navigate = useNavigate();
   return (
     <div>
-      {email}
-      {password}
       <center>
         <div
           style={{
@@ -22,7 +20,7 @@ function Signup() {
           }}
         >
           <Typography variant="h5">
-            Welcome to Yoursera. SignUp below
+          Welcome to StudySphere. 
           </Typography>
         </div>
       </center>

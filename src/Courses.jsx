@@ -14,6 +14,7 @@ function Courses() {
     }).then((res) => {
       res.json().then((data) => {
         setCourses(data.courses);
+        console.log(courses);
         console.log(
           data.courses.map((c) => {
             return c;
@@ -78,7 +79,7 @@ export function CourseCard(props) {
         >
           {props.c.price}
         </Button>
-        {<EditButton edit={props.edit} id={props.c.id}/>}
+        {<EditButton edit={props.edit} id={props.c._id}/>}
         <br />
       </div>
     </Card>
