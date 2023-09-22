@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+.full {
+  height: 80vh;
+  display: flex;
+    align-items: center;
+    gap:1rem
+}
+.heroRight{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.logo-name{
+    margin:1rem;
+}

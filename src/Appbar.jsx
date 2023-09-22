@@ -1,9 +1,11 @@
 import { Typography, Button } from "@mui/material";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 function Appbar() {
   const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState();
+  const currLocation = useLocation();
+  // console.log(currLocation)
   useEffect(() => {
     if (localStorage.getItem("token") != null) {
       if (localStorage.getItem("token").length > 10) {
@@ -37,7 +39,18 @@ function Appbar() {
               margin: 3,
             }}
           >
-            <Typography variant="h5">YourSera</Typography>
+            <Button
+              variant="text"
+              onClick={() => {
+                navigate("/");
+              }}
+              style={{
+                margin: 3,
+                fontSize:"1.4rem"
+              }}
+            >
+              StudySphere
+            </Button>
           </div>
           <div>
             <Button
@@ -74,10 +87,21 @@ function Appbar() {
       >
         <div
           style={{
-            margin: 3,
+            margin: 4,
           }}
         >
-          <Typography variant="h5">Yoursera</Typography>
+          <Button
+            variant="text"
+            onClick={() => {
+              navigate("/");
+            }}
+            style={{
+              margin: 3,
+              fontSize: "1.4rem",
+            }}
+          >
+            StudySphere
+          </Button>
         </div>
         <div>
           <Button

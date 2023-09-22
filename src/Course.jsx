@@ -25,8 +25,8 @@ function Course() {
     return <div>Loading...</div>;
   }
   return (
-    <div style={{ display: "flex" }}>
-      <CourseCard c={course} />{/* <Card>{JSON.stringify(course)}</Card> */}
+    <div style={{ display: "flex" , justifyContent:"center"}}>
+      <CourseCard c={course} edit={0} />{/* <Card>{JSON.stringify(course)}</Card> */}
       <UpdateCard course={course} setCourse={setCourse} courseID={courseID} />
     </div>
   );
@@ -47,14 +47,14 @@ function UpdateCard(props) {
           padding: 20,
         }}
       >
-        <Typography variant="h5">Add course below</Typography>
+        <Typography variant="h5">Edit course</Typography>
         <TextField
           style={{ margin: "1rem" }}
           onChange={(e) => {
             setc_name(e.target.value);
           }}
           fullWidth={true}
-          label="Course Name"
+          label="Name"
           variant="outlined"
         />
         <TextField
