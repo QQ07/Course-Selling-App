@@ -1,8 +1,11 @@
 # React + Vite
+Creating a Course Selling app using React, Node.js and MongoDB.
+Used 
+JWT for Authentication.<br />
+Recoil For State management.<br />
+For Styling I've used Material UI and inline CSS.<br />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Timeline of the project:
+23th September -- Admin panel and backend.
+25th September -- Customer panel.
+30th September -- Bug fixing and better Styling and moving inline css to external.
