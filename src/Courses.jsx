@@ -79,7 +79,7 @@ export function CourseCard(props) {
         >
           {props.c.price}
         </Button>
-        {<EditButton edit={props.edit} id={props.c._id}/>}
+        {<EditButton edit={props.edit} id={props.c.id}/>}
         <br />
       </div>
     </Card>
